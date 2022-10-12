@@ -1,0 +1,27 @@
+.gradientText{
+    background: linear-gradient(to right, #E3493C, #d89330);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.App{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.deleteAllBtn{
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-weight: 600;
+    color: #DB3E3E;
+    background-color: #272D38;
+    transition: all ease .2s;
+}
+
+.deleteAllBtn:hover {
+    background-color: #3F444E;
+}

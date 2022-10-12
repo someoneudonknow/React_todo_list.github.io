@@ -1,0 +1,90 @@
+.modal {
+  background-color: #2d3748;
+  padding: 20px;
+  width: 350px;
+  min-height: 130px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  animation: show-modal ease 0.3s;
+  z-index: 201;
+}
+
+.modal input[type="text"] {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 17px;
+    color: white;
+    margin-bottom: 25px;
+    outline: none;
+    transition: all linear .2s;
+}
+
+.modal input[type="text"]:focus {
+    border: 2px solid #5296d6;
+}
+
+.title {
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.actions {
+  flex: 1;
+  text-align: right;
+  margin-left: auto;
+}
+
+.actions button {
+  padding: 7px;
+  margin-left: 7px;
+  min-width: 45px;
+  border: 2px solid transparent;
+  font-weight: 500;
+  transition: all linear 0.2s;
+}
+
+.actions button:focus {
+  border: 2px solid #5296d6;
+}
+
+.actions button:first-child {
+  background-color: #424b5b;
+  color: white;
+}
+
+.actions button:first-child:hover {
+  background-color: #4f5765;
+}
+
+.actions button:first-child ~ button {
+  background-color: #5296d6;
+}
+
+.actions button:first-child ~ button:hover {
+  background-color: #63b3ed;
+}
+
+.content {
+  flex: 2;
+}
+
+@keyframes show-modal {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    scale: 1;
+  }
+}

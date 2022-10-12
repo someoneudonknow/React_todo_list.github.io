@@ -1,0 +1,28 @@
+.inputForm input{
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.04);
+    outline: none;
+    border: 2px solid transparent;
+    transition: all ease .2s;
+}
+
+.inputForm input:focus {
+    border-color: #1da1f2;
+    background-color: #1a202c;
+}
+
+.button {
+    margin-left: 10px;
+    padding: 10px 28px;
+    color: white;
+    cursor: pointer;
+    background-color: #a8dcfa;
+    transition: all ease .3s;
+    color: #1a202c;
+}
+
+.button:hover{
+    background-color: #5296d6;
+}
